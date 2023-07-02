@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fav book</title>
+</head>
+<body>
+    <p id="book-list"></p>
+    <script>
+     
+var favoriteBooks = [
+  "To Kill a Mockingbird",
+  "1984",
+  "Harry Potter and the Sorcerer's Stone",
+  "The Lord of the Rings",
+  "Pride and Prejudice",
+];
+
+
+function displayBooks(books) {
+  var bookList = document.getElementById("book-list");
+
+  for (var i = 0; i < books.length; i++) {
+    var bookTitle = document.createElement("li");
+    bookTitle.textContent = books[i];
+    bookList.appendChild(bookTitle);
+  }
+}
+
+
+displayBooks(favoriteBooks);
+
+
+    </script>
+</body>
+</html>
